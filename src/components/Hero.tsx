@@ -1,26 +1,24 @@
-import { motion } from 'motion/react';
-import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
-import { Button } from './ui/button';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { motion } from "motion/react";
+import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "./ui/button";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+import header from "../../assets/imgs/header.jpg";
+import pdf from '../../assets/CV.pdf'
 
 export function Hero() {
   const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <ImageWithFallback
-          src="https://images.unsplash.com/photo-1593442257276-1895e27c8ed6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3b3Jrc3BhY2UlMjBjb2Rpbmd8ZW58MXx8fHwxNzU5NTAyNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080"
-          alt="Modern workspace"
-          className="w-full h-full object-cover"
-        />
+        <img src={header} alt="Image Header" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/95 dark:from-background/90 dark:via-background/70 dark:to-background/90" />
       </div>
 
@@ -36,31 +34,35 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            style={{ fontSize: '3.5rem', fontWeight: 'bold', lineHeight: '1.1' }}
+            style={{
+              fontSize: "3.5rem",
+              fontWeight: "bold",
+              lineHeight: "1.1",
+            }}
           >
             Goodness Adewuyi
           </motion.h1>
 
           <motion.p
             className="mb-4 text-muted-foreground"
-            style={{ fontSize: '1.5rem', fontWeight: '500' }}
+            style={{ fontSize: "1.5rem", fontWeight: "500" }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Software Engineer | Educator | Public Speaker
+            Software Engineer | Educator
           </motion.p>
 
           <motion.p
             className="mb-8 max-w-2xl mx-auto text-muted-foreground leading-relaxed"
-            style={{ fontSize: '1.125rem' }}
+            style={{ fontSize: "1.125rem" }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Fullstack developer passionate about React, TypeScript, and Web3. 
-            Building the future while sharing knowledge through training and public speaking. 
-            Aspiring to contribute to tech innovation in Japan.
+            Fullstack developer passionate about React, TypeScript, and Web3.
+            Building the future while sharing knowledge through training and
+            public speaking. Aspiring to contribute to tech innovation in Japan.
           </motion.p>
 
           <motion.div
@@ -72,19 +74,27 @@ export function Hero() {
             <Button
               onClick={scrollToProjects}
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              style={{ fontSize: '1.125rem' }}
+              style={{ fontSize: "1.125rem" }}
             >
               View Projects
             </Button>
-            <Button
-              variant="outline"
-              onClick={scrollToContact}
-              className="px-8 py-6 rounded-full border-2 hover:bg-accent transition-all duration-300"
-              style={{ fontSize: '1.125rem' }}
+            <a
+              href={pdf}
+              download
+              rel="noopener noreferrer"
+              aria-label="Download resume PDF"
+              className="inline-block"
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
-            </Button>
+              <Button
+                variant="outline"
+                // onClick={scrollToContact}
+                className="px-8 py-6 rounded-full border-2 hover:bg-accent transition-all duration-300"
+                style={{ fontSize: "1.125rem" }}
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </Button>
+            </a>
           </motion.div>
 
           <motion.div
@@ -94,7 +104,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 1.0 }}
           >
             <a
-              href="https://github.com/goodnessadewuyi"
+              href="https://github.com/IDGoodness"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors duration-300"
@@ -110,7 +120,7 @@ export function Hero() {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:goodness@example.com"
+              href="mailto:adewuyigoodness1@gmail.com"
               className="text-muted-foreground hover:text-foreground transition-colors duration-300"
             >
               <Mail className="h-6 w-6" />
