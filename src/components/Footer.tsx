@@ -10,18 +10,24 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="mb-4" style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>
+            <h3
+              className="mb-4"
+              style={{ fontSize: "1.25rem", fontWeight: "bold" }}
+            >
               Goodness Adewuyi
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Software Engineer passionate about creating impactful digital solutions 
-              and empowering the next generation of developers.
+              Software Engineer passionate about creating impactful digital
+              solutions and empowering the next generation of developers.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4" style={{ fontSize: '1rem', fontWeight: '600' }}>
+            <h4
+              className="mb-4"
+              style={{ fontSize: "1rem", fontWeight: "600" }}
+            >
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -30,7 +36,9 @@ export function Footer() {
                   href="#about"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("about")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
                 >
@@ -42,7 +50,9 @@ export function Footer() {
                   href="#skills"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("skills")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
                 >
@@ -54,7 +64,9 @@ export function Footer() {
                   href="#projects"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("projects")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
                 >
@@ -66,7 +78,9 @@ export function Footer() {
                   href="#speaking"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('speaking')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("speaking")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
                 >
@@ -78,7 +92,9 @@ export function Footer() {
                   href="#contact"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("contact")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
                 >
@@ -90,13 +106,16 @@ export function Footer() {
 
           {/* Connect */}
           <div>
-            <h4 className="mb-4" style={{ fontSize: '1rem', fontWeight: '600' }}>
+            <h4
+              className="mb-4"
+              style={{ fontSize: "1rem", fontWeight: "600" }}
+            >
               Connect With Me
             </h4>
             <div className="space-y-3">
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/goodnessadewuyi"
+                  href="https://github.com/IDGoodness"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -131,7 +150,8 @@ export function Footer() {
                 </a>
               </div>
               <p className="text-sm text-muted-foreground">
-                Always open to discussing new opportunities, especially in Japan! 🇯🇵
+                Always open to discussing new opportunities, collaborations, or
+                just to say hello!
               </p>
             </div>
           </div>
@@ -143,7 +163,7 @@ export function Footer() {
             <p className="text-sm text-muted-foreground mb-4 md:mb-0">
               © {currentYear} Goodness Adewuyi. All rights reserved.
             </p>
-            
+
             <motion.div
               className="flex items-center text-sm text-muted-foreground"
               initial={{ opacity: 0 }}
@@ -151,7 +171,8 @@ export function Footer() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Built with <Heart className="h-4 w-4 mx-1 text-red-500" /> using React, TypeScript & Tailwind CSS
+              Built with <Heart className="h-4 w-4 mx-1 text-red-500" /> by
+              Cḥrēstótēs🔥using React, TypeScript & Tailwind CSS
             </motion.div>
           </div>
         </div>

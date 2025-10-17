@@ -17,8 +17,8 @@ export function About() {
           <h2 className="mb-4" style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>
             About Me
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto" style={{ fontSize: '1.125rem' }}>
-            A journey from pandemic curiosity to fullstack mastery
+          <p className="text-muted-foreground max-w-2xl mx-auto capitalize" style={{ fontSize: '1.125rem', textTransform: 'capitalize' }}>
+            A journey from pandemic curiosity to fullStack mastery
           </p>
         </motion.div>
 
@@ -29,13 +29,12 @@ export function About() {
           >
             <div className="space-y-6">
               <p className="leading-relaxed" style={{ fontSize: '1.125rem' }}>
-                My coding journey began during the pandemic when curiosity led me to explore 
-                HTML, CSS, and JavaScript. What started as a way to pass time quickly became 
+                My coding journey began during the pandemic when curiosity led me to explore Python, HTML, CSS, and JavaScript. What started as a way to pass time quickly became 
                 a passion that transformed my career path entirely.
               </p>
               
               <p className="leading-relaxed" style={{ fontSize: '1.125rem' }}>
-                Today, I'm a fullstack software engineer specializing in React, TypeScript, 
+                Today, I'm a FullStack Software Engineer specializing in React, TypeScript, 
                 Node.js, and modern web technologies. I've built everything from certificate 
                 generation platforms to AI tutoring systems, always pushing the boundaries 
                 of what's possible with code.
@@ -90,7 +89,7 @@ export function About() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:shadow-lg transition-all duration-300">
+            {/* <Card className="border-2 hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <MapPin className="h-8 w-8 text-red-500 mr-4" />
@@ -103,7 +102,7 @@ export function About() {
                   degree in Japan and contributing to the tech ecosystem there.
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
 
             <Card className="border-2 hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">

@@ -22,6 +22,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { toast } from "sonner";
+import pdf from '../../assets/CV.pdf'
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -118,7 +119,7 @@ export function Contact() {
                       href="mailto:goodness@example.com"
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
-                      goodness@example.com
+                      adewuyigoodness1@gmail.com
                     </a>
                   </div>
                 </div>
@@ -129,7 +130,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p style={{ fontWeight: "600" }}>Location</p>
-                    <p className="text-muted-foreground">Lagos, Nigeria</p>
+                    <p className="text-muted-foreground">Ogbomoso, Nigeria</p>
                     <p className="text-sm text-muted-foreground">
                       Open to remote opportunities worldwide
                     </p>
@@ -145,9 +146,9 @@ export function Contact() {
                     <p className="text-muted-foreground">
                       Available for full-time opportunities
                     </p>
-                    <p className="text-sm text-muted-foreground">
+                    {/* <p className="text-sm text-muted-foreground">
                       Especially interested in Japan-based roles
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </CardContent>
@@ -163,7 +164,7 @@ export function Contact() {
               <CardContent>
                 <div className="grid grid-cols-2 gap-4">
                   <a
-                    href="https://github.com/goodnessadewuyi"
+                    href="https://github.com/IDGoodness"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 rounded-lg border hover:bg-accent transition-colors group"
@@ -173,7 +174,7 @@ export function Contact() {
                   </a>
 
                   <a
-                    href="https://linkedin.com/in/goodnessadewuyi"
+                    href="https://www.linkedin.com/in/goodnessadewuyi"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 rounded-lg border hover:bg-accent transition-colors group"
@@ -192,14 +193,15 @@ export function Contact() {
                     <span className="text-sm">Twitter</span>
                   </a>
 
-                  <Button
-                    onClick={downloadResume}
-                    variant="outline"
-                    className="flex items-center space-x-3 p-3 h-auto hover:bg-accent"
+                  <a
+                    href={pdf}
+                    download
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-3 p-3 rounded-lg border hover:bg-accent transition-colors group"
                   >
-                    <Download className="h-5 w-5" />
+                    <Download className="h-5 w-5 text-muted-foreground group-hover:text-foreground" />
                     <span className="text-sm">Resume</span>
-                  </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -284,7 +286,7 @@ export function Contact() {
         </div>
 
         {/* Japan Interest Section */}
-        <motion.div
+        {/* <motion.div
           {...fadeInUp}
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-16"
@@ -348,7 +350,7 @@ export function Contact() {
               </Button>
             </CardContent>
           </Card>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
