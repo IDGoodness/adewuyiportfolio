@@ -6,6 +6,8 @@ import { Badge } from './ui/badge';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import certPlat from '../../assets/imgs/certPlat.png';
 import aiApp from '../../assets/imgs/aiApp.png';
+import compound from '../../assets/imgs/compound.png';
+import calculator from '../../assets/imgs/calculator.png';
 
 export function Projects() {
   const fadeInUp = {
@@ -53,10 +55,11 @@ export function Projects() {
       description:
         "An automated NFT minting bot with advanced features like rarity detection, gas optimization, and real-time market analysis. Built for the Web3 ecosystem.",
       technologies: [
+        "JavaScript",
+        "Smart Contracts",
+        "Ethereum",
         "Python",
         "Web3.py",
-        "Ethereum",
-        "Smart Contracts",
         "APIs",
       ],
       image:
@@ -66,25 +69,24 @@ export function Projects() {
       featured: false,
     },
     {
-      title: "News Website Platform",
+      title: "Compound Interest Calculator",
       description:
-        "A modern news aggregation and publishing platform with real-time updates, user authentication, and content management system. Optimized for performance and SEO.",
-      technologies: ["React", "Express.js", "MongoDB", "Socket.io", "Redis"],
-      image:
-        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXdzJTIwd2Vic2l0ZXxlbnwxfHx8fDE3NTk1ODU1NzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      githubUrl: "https://github.com/goodnessadewuyi/news-platform",
-      liveUrl: "https://news-platform-demo.vercel.app",
+        "A simple and intuitive web application for calculating compound interest. Users can input their principal amount, interest rate, and duration to see the potential returns on their investment.",
+      technologies: ["React", "JavaScript", "HTML", "CSS", "Vercel"],
+      image: compound,
+      githubUrl:
+        "https://github.com/IDGoodness/React-Compound-Interest-Calculator",
+      liveUrl: "https://react-compound-interest-calculator-delta.vercel.app/",
       featured: false,
     },
     {
-      title: "Web Development Bootcamp Platform",
+      title: "JavaScript Calculator",
       description:
-        "A comprehensive learning management system for web development bootcamps. Features course management, progress tracking, and interactive coding exercises.",
-      technologies: ["Vue.js", "Laravel", "MySQL", "WebRTC", "Docker"],
-      image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGJvb3RjYW1wfGVufDF8fHx8MTc1OTU4NTU3NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      githubUrl: "https://github.com/goodnessadewuyi/bootcamp-platform",
-      liveUrl: "https://bootcamp-platform.vercel.app",
+        "A sleek and responsive calculator application built with vanilla JavaScript. Features basic arithmetic operations, a clean user interface, and smooth animations.",
+      technologies: ["JavaScript", "HTML", "CSS", "SCSS", "Less"],
+      image: calculator,
+      githubUrl: "https://github.com/IDGoodness/JavaScriptProject-E-Commerce",
+      liveUrl: "https://javascript-calculator-opal-alpha.vercel.app/",
       featured: false,
     },
     {
